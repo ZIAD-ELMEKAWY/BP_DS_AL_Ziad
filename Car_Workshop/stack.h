@@ -20,8 +20,12 @@
 
 
 /************* Section : Function Declarations *************/
-void Create_Stack (Customer_t *my_Stack);
-void push (char *Name , int ID , int year_model , Customer_t *my_Stack);
-void pop (Customer_t *my_Stac) ;
+static void Create_Stack (Customer_t *my_Stack);
+static void Add_New_Customer (int ID , int year_model , Customer_t *my_Stack);
+static void Serve_Customer (Customer_t *my_Stac) ;
+static void Number_of_Customers (Customer_t *my_Stack) ;
+static void Display_Customer_Information_in_most_recent(Customer_t *my_Stack);
+static void Motion(void) ;
+static void Display_Customer_Information(Customer_t *my_Stack) ;
 
 #endif // STACK_H_INCLUDED
